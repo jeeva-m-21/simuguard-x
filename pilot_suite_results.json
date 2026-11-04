@@ -1,0 +1,50 @@
+[
+  {
+    "requirement_id": "AT1",
+    "category": "Safety (Unconditional)",
+    "formula": "always_[0,30] (speed <= 120)",
+    "falsified": true,
+    "simulations": 6,
+    "regime_0_skips": 0,
+    "wall_clock_sec": 36.223289489746094,
+    "robustness_rho": -0.02537111475438362,
+    "critical_signal": "Max Speed (km/h)",
+    "critical_value": 124.56680065578905,
+    "gate2_confirmed": true,
+    "gate2_drift": 2.641533716740696e-05,
+    "llm_tokens": 2935,
+    "llm_cost_usd": 0.0026414999999999998
+  },
+  {
+    "requirement_id": "AT2",
+    "category": "Safety (Unconditional)",
+    "formula": "always_[0,30] (RPM <= 4500)",
+    "falsified": true,
+    "simulations": 1,
+    "regime_0_skips": 0,
+    "wall_clock_sec": 17.974963665008545,
+    "robustness_rho": -0.03309190229276783,
+    "critical_signal": "Max RPM",
+    "critical_value": 4698.551413756607,
+    "gate2_confirmed": true,
+    "gate2_drift": 8.661222890476994e-06,
+    "llm_tokens": 2761,
+    "llm_cost_usd": 0.0024849
+  },
+  {
+    "requirement_id": "AT51",
+    "category": "Response (Conditional Implication)",
+    "formula": "always_[0,30] ( speed > 100 => ( eventually_[0,4] (gear >= 4) and always_(speed > 100 => gear >= 4) ) )",
+    "falsified": false,
+    "simulations": 120,
+    "regime_0_skips": 0,
+    "wall_clock_sec": 14.162081003189087,
+    "robustness_rho": 0.16666666666666666,
+    "critical_signal": "N/A",
+    "critical_value": null,
+    "gate2_confirmed": false,
+    "gate2_drift": 0.0,
+    "llm_tokens": 4002,
+    "llm_cost_usd": 0.0036018
+  }
+]

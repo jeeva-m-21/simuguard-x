@@ -1,0 +1,146 @@
+[
+  {
+    "requirement_id": "AT1",
+    "seed": 42,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.02537111475438362,
+        "wall_clock_sec": 30.96763777732849
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 52,
+        "best_rho": -0.008611886126145328,
+        "wall_clock_sec": 13.194828271865845
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.02537111475438362,
+        "wall_clock_sec": 4.4919445514678955
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 52,
+        "best_rho": -0.008611886126145328,
+        "wall_clock_sec": 11.761929035186768
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 52,
+        "best_rho": -0.008611886126145328,
+        "wall_clock_sec": 12.002771615982056
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 52,
+        "best_rho": -0.008611886126145328,
+        "wall_clock_sec": 12.129632949829102
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 30,
+        "best_rho": -0.04209583091593372,
+        "wall_clock_sec": 9.712249040603638
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 42,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03309190229276783,
+        "wall_clock_sec": 3.058608293533325
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.009075228126014433,
+        "wall_clock_sec": 4.014355182647705
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03309190229276783,
+        "wall_clock_sec": 3.330584764480591
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.009075228126014433,
+        "wall_clock_sec": 4.5019378662109375
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.009075228126014433,
+        "wall_clock_sec": 4.4703710079193115
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.009075228126014433,
+        "wall_clock_sec": 3.4006452560424805
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 23,
+        "best_rho": -0.04262732862673556,
+        "wall_clock_sec": 6.943724632263184
+      }
+    }
+  },
+  {
+    "requirement_id": "AT51",
+    "seed": 42,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 18,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 28.618947744369507
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 56,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 37.33928561210632
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 18,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 17.158021450042725
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 56,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 33.71081757545471
+      },
+      "Dok_Cold": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 91.7540225982666
+      },
+      "Plain_Cold": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 117.92276310920715
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 91,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 79.64550304412842
+      }
+    }
+  }
+]

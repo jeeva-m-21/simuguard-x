@@ -1,0 +1,3026 @@
+[
+  {
+    "requirement_id": "AT1",
+    "seed": 1,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.03462677494717773,
+        "wall_clock_sec": 20.088140726089478
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 51,
+        "best_rho": -0.00395670400090506,
+        "wall_clock_sec": 8.905070066452026
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.03462677494717773,
+        "wall_clock_sec": 2.898921012878418
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 51,
+        "best_rho": -0.00395670400090506,
+        "wall_clock_sec": 8.861637115478516
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 51,
+        "best_rho": -0.00395670400090506,
+        "wall_clock_sec": 8.094101667404175
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 51,
+        "best_rho": -0.00395670400090506,
+        "wall_clock_sec": 10.37583303451538
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 30,
+        "best_rho": -0.0016738031857127251,
+        "wall_clock_sec": 5.960930585861206
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 2,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.039874702724477844,
+        "wall_clock_sec": 2.3894202709198
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 55,
+        "best_rho": -0.002375888377035156,
+        "wall_clock_sec": 8.210872650146484
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.039874702724477844,
+        "wall_clock_sec": 1.9790139198303223
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 55,
+        "best_rho": -0.002375888377035156,
+        "wall_clock_sec": 8.460586309432983
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 55,
+        "best_rho": -0.002375888377035156,
+        "wall_clock_sec": 10.13849663734436
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 55,
+        "best_rho": -0.002375888377035156,
+        "wall_clock_sec": 12.08107852935791
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 77,
+        "best_rho": -0.005874986004841847,
+        "wall_clock_sec": 19.1428439617157
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 3,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.0019277738126210094,
+        "wall_clock_sec": 2.218745231628418
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 12,
+        "best_rho": -0.01117108905344995,
+        "wall_clock_sec": 4.462937593460083
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.0019277738126210094,
+        "wall_clock_sec": 2.7001872062683105
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 12,
+        "best_rho": -0.01117108905344995,
+        "wall_clock_sec": 4.740474700927734
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 12,
+        "best_rho": -0.01117108905344995,
+        "wall_clock_sec": 3.895249366760254
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 12,
+        "best_rho": -0.01117108905344995,
+        "wall_clock_sec": 3.265554428100586
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 87,
+        "best_rho": -0.0028092604689820494,
+        "wall_clock_sec": 11.688113689422607
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 4,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.013822537821591397,
+        "wall_clock_sec": 2.912553310394287
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 83,
+        "best_rho": -0.01907332697427664,
+        "wall_clock_sec": 14.368689060211182
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.013822537821591397,
+        "wall_clock_sec": 3.9025490283966064
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 83,
+        "best_rho": -0.01907332697427664,
+        "wall_clock_sec": 13.113245964050293
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 83,
+        "best_rho": -0.01907332697427664,
+        "wall_clock_sec": 11.981990814208984
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 83,
+        "best_rho": -0.01907332697427664,
+        "wall_clock_sec": 51.7734797000885
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 94,
+        "best_rho": -0.004556792496329918,
+        "wall_clock_sec": 72.5441210269928
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 5,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.0021204754562263242,
+        "wall_clock_sec": 4.591455459594727
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 30,
+        "best_rho": -0.0006449058022735383,
+        "wall_clock_sec": 5.8227245807647705
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.0021204754562263242,
+        "wall_clock_sec": 3.1324124336242676
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 30,
+        "best_rho": -0.0006449058022735383,
+        "wall_clock_sec": 6.17165994644165
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 30,
+        "best_rho": -0.0006449058022735383,
+        "wall_clock_sec": 5.971243858337402
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 30,
+        "best_rho": -0.0006449058022735383,
+        "wall_clock_sec": 6.114908456802368
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 44,
+        "best_rho": -0.025295469751693625,
+        "wall_clock_sec": 7.7487945556640625
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 6,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.02344073880558805,
+        "wall_clock_sec": 330.00497126579285
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 143,
+        "best_rho": -0.00795045081506179,
+        "wall_clock_sec": 14.181764602661133
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.02344073880558805,
+        "wall_clock_sec": 3.1609930992126465
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 143,
+        "best_rho": -0.00795045081506179,
+        "wall_clock_sec": 16.26229476928711
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 143,
+        "best_rho": -0.00795045081506179,
+        "wall_clock_sec": 17.98783302307129
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 143,
+        "best_rho": -0.00795045081506179,
+        "wall_clock_sec": 15.34721302986145
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 132,
+        "best_rho": -0.009962262140527558,
+        "wall_clock_sec": 15.593024253845215
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 7,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 4,
+        "best_rho": -0.055773889513855104,
+        "wall_clock_sec": 2.0672638416290283
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02376191710532688,
+        "wall_clock_sec": 4.915496110916138
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 4,
+        "best_rho": -0.055773889513855104,
+        "wall_clock_sec": 2.253180742263794
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02376191710532688,
+        "wall_clock_sec": 6.221630811691284
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02376191710532688,
+        "wall_clock_sec": 6.723465204238892
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02376191710532688,
+        "wall_clock_sec": 5.172030687332153
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 44,
+        "best_rho": -0.04428135404946537,
+        "wall_clock_sec": 6.998708963394165
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 8,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.013544178809992265,
+        "wall_clock_sec": 6.215027093887329
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005604798147621261,
+        "wall_clock_sec": 3.933485507965088
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.013544178809992265,
+        "wall_clock_sec": 6.615467548370361
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005604798147621261,
+        "wall_clock_sec": 4.1484694480896
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005604798147621261,
+        "wall_clock_sec": 3.603588342666626
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005604798147621261,
+        "wall_clock_sec": 4.222740411758423
+      },
+      "Random_Search": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": 0.000483723549429745,
+        "wall_clock_sec": 15.775127649307251
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 9,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04416400501871575,
+        "wall_clock_sec": 1.1222381591796875
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.027062259201685555,
+        "wall_clock_sec": 7.599833011627197
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04416400501871575,
+        "wall_clock_sec": 1.9718644618988037
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.027062259201685555,
+        "wall_clock_sec": 6.488497495651245
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.027062259201685555,
+        "wall_clock_sec": 6.882065534591675
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.027062259201685555,
+        "wall_clock_sec": 6.941914081573486
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.008994831578416058,
+        "wall_clock_sec": 12.576283693313599
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 10,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.010638864745058246,
+        "wall_clock_sec": 2.539681911468506
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 15,
+        "best_rho": -0.0017536758938234698,
+        "wall_clock_sec": 4.202880859375
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.010638864745058246,
+        "wall_clock_sec": 1.5524060726165771
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 15,
+        "best_rho": -0.0017536758938234698,
+        "wall_clock_sec": 4.143108129501343
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 15,
+        "best_rho": -0.0017536758938234698,
+        "wall_clock_sec": 4.071660757064819
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 15,
+        "best_rho": -0.0017536758938234698,
+        "wall_clock_sec": 3.51877760887146
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 55,
+        "best_rho": -0.005720778429123246,
+        "wall_clock_sec": 7.023210048675537
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 11,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.011500782501119348,
+        "wall_clock_sec": 2.515815496444702
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 19,
+        "best_rho": -0.008078916563654717,
+        "wall_clock_sec": 4.334625959396362
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.011500782501119348,
+        "wall_clock_sec": 2.5514678955078125
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 19,
+        "best_rho": -0.008078916563654717,
+        "wall_clock_sec": 4.786288022994995
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 19,
+        "best_rho": -0.008078916563654717,
+        "wall_clock_sec": 4.514850616455078
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 19,
+        "best_rho": -0.008078916563654717,
+        "wall_clock_sec": 4.152766227722168
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 34,
+        "best_rho": -0.025951583218330083,
+        "wall_clock_sec": 5.438910245895386
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 12,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.05860438576017578,
+        "wall_clock_sec": 1.6766138076782227
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 79,
+        "best_rho": -0.024795433039174322,
+        "wall_clock_sec": 9.15630578994751
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.05860438576017578,
+        "wall_clock_sec": 1.670642375946045
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 79,
+        "best_rho": -0.024795433039174322,
+        "wall_clock_sec": 8.834976196289062
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 79,
+        "best_rho": -0.024795433039174322,
+        "wall_clock_sec": 8.849987983703613
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 79,
+        "best_rho": -0.024795433039174322,
+        "wall_clock_sec": 9.514065504074097
+      },
+      "Random_Search": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": 0.004047618393112629,
+        "wall_clock_sec": 15.991288900375366
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 13,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.008878902252864092,
+        "wall_clock_sec": 0.9364163875579834
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 50,
+        "best_rho": -0.006320680458597236,
+        "wall_clock_sec": 6.614423990249634
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.008878902252864092,
+        "wall_clock_sec": 2.062649965286255
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 50,
+        "best_rho": -0.006320680458597236,
+        "wall_clock_sec": 6.7907631397247314
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 50,
+        "best_rho": -0.006320680458597236,
+        "wall_clock_sec": 6.590728998184204
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 50,
+        "best_rho": -0.006320680458597236,
+        "wall_clock_sec": 6.320929765701294
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.00021494774874466,
+        "wall_clock_sec": 2.6252286434173584
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 14,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 14,
+        "best_rho": -0.010266871049932607,
+        "wall_clock_sec": 3.616880416870117
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 43,
+        "best_rho": -0.008223568522334862,
+        "wall_clock_sec": 5.981273651123047
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 14,
+        "best_rho": -0.010266871049932607,
+        "wall_clock_sec": 3.8931541442871094
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 43,
+        "best_rho": -0.008223568522334862,
+        "wall_clock_sec": 6.259413242340088
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 43,
+        "best_rho": -0.008223568522334862,
+        "wall_clock_sec": 6.079509258270264
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 43,
+        "best_rho": -0.008223568522334862,
+        "wall_clock_sec": 6.225555181503296
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 94,
+        "best_rho": -0.003883141253626911,
+        "wall_clock_sec": 10.450876474380493
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 15,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.0007266271760565404,
+        "wall_clock_sec": 1.4702847003936768
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 22,
+        "best_rho": -0.034248895035487614,
+        "wall_clock_sec": 4.249841690063477
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.0007266271760565404,
+        "wall_clock_sec": 1.536081075668335
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 22,
+        "best_rho": -0.034248895035487614,
+        "wall_clock_sec": 4.543641805648804
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 22,
+        "best_rho": -0.034248895035487614,
+        "wall_clock_sec": 4.665047883987427
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 22,
+        "best_rho": -0.034248895035487614,
+        "wall_clock_sec": 4.277617454528809
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 18,
+        "best_rho": -0.03160096907565904,
+        "wall_clock_sec": 4.594220876693726
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 16,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.03883239429719336,
+        "wall_clock_sec": 3.082890272140503
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 41,
+        "best_rho": -0.024174026198257238,
+        "wall_clock_sec": 5.9065306186676025
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.03883239429719336,
+        "wall_clock_sec": 2.6056294441223145
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 41,
+        "best_rho": -0.024174026198257238,
+        "wall_clock_sec": 6.210200548171997
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 41,
+        "best_rho": -0.024174026198257238,
+        "wall_clock_sec": 6.171931982040405
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 41,
+        "best_rho": -0.024174026198257238,
+        "wall_clock_sec": 5.751704454421997
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 30,
+        "best_rho": -0.010366563296760568,
+        "wall_clock_sec": 5.490584850311279
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 17,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.054681659966064444,
+        "wall_clock_sec": 1.520768165588379
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 26,
+        "best_rho": -0.006249197054197472,
+        "wall_clock_sec": 4.538302183151245
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.054681659966064444,
+        "wall_clock_sec": 1.4476292133331299
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 26,
+        "best_rho": -0.006249197054197472,
+        "wall_clock_sec": 5.265305757522583
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 26,
+        "best_rho": -0.006249197054197472,
+        "wall_clock_sec": 4.706756114959717
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 26,
+        "best_rho": -0.006249197054197472,
+        "wall_clock_sec": 4.994248151779175
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 22,
+        "best_rho": -0.023196291666098844,
+        "wall_clock_sec": 5.437281608581543
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 18,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.02447767791638158,
+        "wall_clock_sec": 1.891463041305542
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005850112781550523,
+        "wall_clock_sec": 3.58209490776062
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.02447767791638158,
+        "wall_clock_sec": 1.6325922012329102
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005850112781550523,
+        "wall_clock_sec": 3.2727789878845215
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005850112781550523,
+        "wall_clock_sec": 3.5598878860473633
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.005850112781550523,
+        "wall_clock_sec": 3.674816370010376
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 16,
+        "best_rho": -0.02076990007980473,
+        "wall_clock_sec": 3.6597392559051514
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 19,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.02775629860353364,
+        "wall_clock_sec": 1.6717109680175781
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.008292936543359355,
+        "wall_clock_sec": 5.47346830368042
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.02775629860353364,
+        "wall_clock_sec": 1.3804900646209717
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.008292936543359355,
+        "wall_clock_sec": 5.296852350234985
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.008292936543359355,
+        "wall_clock_sec": 5.124953031539917
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.008292936543359355,
+        "wall_clock_sec": 5.641369581222534
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.022359804116365702,
+        "wall_clock_sec": 3.2313356399536133
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 20,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.021751535233070347,
+        "wall_clock_sec": 1.6532418727874756
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.035185186792270666,
+        "wall_clock_sec": 5.5226123332977295
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.021751535233070347,
+        "wall_clock_sec": 1.786961555480957
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.035185186792270666,
+        "wall_clock_sec": 6.501710653305054
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.035185186792270666,
+        "wall_clock_sec": 5.476001977920532
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 36,
+        "best_rho": -0.035185186792270666,
+        "wall_clock_sec": 6.226492881774902
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.027010074858690794,
+        "wall_clock_sec": 3.299959421157837
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 21,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 4,
+        "best_rho": -0.046176122197221364,
+        "wall_clock_sec": 2.190608263015747
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 71,
+        "best_rho": -0.008489604201645701,
+        "wall_clock_sec": 8.580775260925293
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 4,
+        "best_rho": -0.046176122197221364,
+        "wall_clock_sec": 1.95200777053833
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 71,
+        "best_rho": -0.008489604201645701,
+        "wall_clock_sec": 8.658137559890747
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 71,
+        "best_rho": -0.008489604201645701,
+        "wall_clock_sec": 8.173100709915161
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 71,
+        "best_rho": -0.008489604201645701,
+        "wall_clock_sec": 8.200156450271606
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 38,
+        "best_rho": -0.06177380442602561,
+        "wall_clock_sec": 5.661027431488037
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 22,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.033760035335524366,
+        "wall_clock_sec": 1.8480267524719238
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.018754888778329124,
+        "wall_clock_sec": 2.849306583404541
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.033760035335524366,
+        "wall_clock_sec": 1.627345085144043
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.018754888778329124,
+        "wall_clock_sec": 2.46211314201355
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.018754888778329124,
+        "wall_clock_sec": 3.167634963989258
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.018754888778329124,
+        "wall_clock_sec": 3.061389446258545
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 40,
+        "best_rho": -0.003067926328046945,
+        "wall_clock_sec": 6.432551860809326
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 23,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.013090277799331317,
+        "wall_clock_sec": 1.9158987998962402
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02886595591056778,
+        "wall_clock_sec": 4.795036554336548
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.013090277799331317,
+        "wall_clock_sec": 1.572911262512207
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02886595591056778,
+        "wall_clock_sec": 4.60621976852417
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02886595591056778,
+        "wall_clock_sec": 4.679146766662598
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.02886595591056778,
+        "wall_clock_sec": 4.3431291580200195
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.04110410715815394,
+        "wall_clock_sec": 3.194063186645508
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 24,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.03815494935348095,
+        "wall_clock_sec": 2.0293633937835693
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 70,
+        "best_rho": -0.00022487298147998066,
+        "wall_clock_sec": 8.308782815933228
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.03815494935348095,
+        "wall_clock_sec": 1.889054536819458
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 70,
+        "best_rho": -0.00022487298147998066,
+        "wall_clock_sec": 7.919293642044067
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 70,
+        "best_rho": -0.00022487298147998066,
+        "wall_clock_sec": 8.164154529571533
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 70,
+        "best_rho": -0.00022487298147998066,
+        "wall_clock_sec": 8.366394281387329
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 70,
+        "best_rho": -0.0056091024890391515,
+        "wall_clock_sec": 8.586739301681519
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 25,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.02091130898118965,
+        "wall_clock_sec": 2.793001413345337
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.00890313263480975,
+        "wall_clock_sec": 7.174349784851074
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.02091130898118965,
+        "wall_clock_sec": 2.8318355083465576
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.00890313263480975,
+        "wall_clock_sec": 6.868081092834473
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.00890313263480975,
+        "wall_clock_sec": 8.33441162109375
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 47,
+        "best_rho": -0.00890313263480975,
+        "wall_clock_sec": 32.18834614753723
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 22,
+        "best_rho": -0.009393233248636237,
+        "wall_clock_sec": 21.581464529037476
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 26,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.00018885366432049486,
+        "wall_clock_sec": 11.321590900421143
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.02020272453873046,
+        "wall_clock_sec": 32.79881405830383
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.00018885366432049486,
+        "wall_clock_sec": 9.909586191177368
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.02020272453873046,
+        "wall_clock_sec": 28.89420247077942
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.02020272453873046,
+        "wall_clock_sec": 21.729734420776367
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.02020272453873046,
+        "wall_clock_sec": 12.69815444946289
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 134,
+        "best_rho": -0.016380798146416867,
+        "wall_clock_sec": 88.43039393424988
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 27,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.06514821373905669,
+        "wall_clock_sec": 14.704500436782837
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.002555693569490182,
+        "wall_clock_sec": 33.80408215522766
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.06514821373905669,
+        "wall_clock_sec": 9.91423225402832
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.002555693569490182,
+        "wall_clock_sec": 11.186354160308838
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.002555693569490182,
+        "wall_clock_sec": 14.71767544746399
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 39,
+        "best_rho": -0.002555693569490182,
+        "wall_clock_sec": 36.66715621948242
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 133,
+        "best_rho": -0.018835768418615197,
+        "wall_clock_sec": 77.33554792404175
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 28,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.06545201799508299,
+        "wall_clock_sec": 12.428844690322876
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 58,
+        "best_rho": -0.011973472264003169,
+        "wall_clock_sec": 21.19732689857483
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.06545201799508299,
+        "wall_clock_sec": 5.6800079345703125
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 58,
+        "best_rho": -0.011973472264003169,
+        "wall_clock_sec": 28.06133198738098
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 58,
+        "best_rho": -0.011973472264003169,
+        "wall_clock_sec": 33.800398111343384
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 58,
+        "best_rho": -0.011973472264003169,
+        "wall_clock_sec": 31.74159526824951
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 104,
+        "best_rho": -0.05723976064224685,
+        "wall_clock_sec": 49.27330994606018
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 29,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.03925295549705415,
+        "wall_clock_sec": 3.5894899368286133
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.004594991003972698,
+        "wall_clock_sec": 6.375438928604126
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.03925295549705415,
+        "wall_clock_sec": 5.549651384353638
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.004594991003972698,
+        "wall_clock_sec": 7.071412801742554
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.004594991003972698,
+        "wall_clock_sec": 12.321011304855347
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.004594991003972698,
+        "wall_clock_sec": 19.210779190063477
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 24,
+        "best_rho": -0.010761568270251114,
+        "wall_clock_sec": 25.832813024520874
+      }
+    }
+  },
+  {
+    "requirement_id": "AT1",
+    "seed": 30,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.01967920878054912,
+        "wall_clock_sec": 9.943892478942871
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.01448939668536487,
+        "wall_clock_sec": 15.680044412612915
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.01967920878054912,
+        "wall_clock_sec": 9.617464542388916
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.01448939668536487,
+        "wall_clock_sec": 14.515347242355347
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.01448939668536487,
+        "wall_clock_sec": 13.71346640586853
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.01448939668536487,
+        "wall_clock_sec": 13.700988531112671
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 57,
+        "best_rho": -0.01742130658385695,
+        "wall_clock_sec": 25.010199785232544
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 1,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.021528543095963415,
+        "wall_clock_sec": 6.631925582885742
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.04314645844952626,
+        "wall_clock_sec": 8.150543451309204
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.021528543095963415,
+        "wall_clock_sec": 5.260298252105713
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.04314645844952626,
+        "wall_clock_sec": 11.753745794296265
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.04314645844952626,
+        "wall_clock_sec": 13.793137073516846
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.04314645844952626,
+        "wall_clock_sec": 13.446517944335938
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.019781962120654195,
+        "wall_clock_sec": 14.133134841918945
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 2,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.0323177827043778,
+        "wall_clock_sec": 12.310669422149658
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 16,
+        "best_rho": -0.010352986508223087,
+        "wall_clock_sec": 20.33922815322876
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.0323177827043778,
+        "wall_clock_sec": 9.999039649963379
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 16,
+        "best_rho": -0.010352986508223087,
+        "wall_clock_sec": 18.96016764640808
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 16,
+        "best_rho": -0.010352986508223087,
+        "wall_clock_sec": 19.708725690841675
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 16,
+        "best_rho": -0.010352986508223087,
+        "wall_clock_sec": 17.92092990875244
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.01613597669541241,
+        "wall_clock_sec": 16.43390202522278
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 3,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.008925890556050338,
+        "wall_clock_sec": 7.80034613609314
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04232594932535888,
+        "wall_clock_sec": 11.061638116836548
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.008925890556050338,
+        "wall_clock_sec": 6.194983005523682
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04232594932535888,
+        "wall_clock_sec": 9.561653852462769
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04232594932535888,
+        "wall_clock_sec": 10.595244407653809
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04232594932535888,
+        "wall_clock_sec": 8.760807752609253
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 16,
+        "best_rho": -0.010695688776218957,
+        "wall_clock_sec": 11.62632966041565
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 4,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04414227904046326,
+        "wall_clock_sec": 7.044770956039429
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030769271670390178,
+        "wall_clock_sec": 9.445897102355957
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04414227904046326,
+        "wall_clock_sec": 9.204216718673706
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030769271670390178,
+        "wall_clock_sec": 10.78078818321228
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030769271670390178,
+        "wall_clock_sec": 11.581077814102173
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030769271670390178,
+        "wall_clock_sec": 10.758692741394043
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.015023364151702481,
+        "wall_clock_sec": 9.642560720443726
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 5,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04416638003724544,
+        "wall_clock_sec": 7.403448581695557
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.0026157455765351187,
+        "wall_clock_sec": 14.837236642837524
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04416638003724544,
+        "wall_clock_sec": 11.89897084236145
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.0026157455765351187,
+        "wall_clock_sec": 14.052169799804688
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.0026157455765351187,
+        "wall_clock_sec": 11.977766036987305
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.0026157455765351187,
+        "wall_clock_sec": 11.673395872116089
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.020817635762236476,
+        "wall_clock_sec": 9.163590669631958
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 6,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.022329087120854334,
+        "wall_clock_sec": 8.249823093414307
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.012854563197750546,
+        "wall_clock_sec": 8.74689245223999
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.022329087120854334,
+        "wall_clock_sec": 6.325348854064941
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.012854563197750546,
+        "wall_clock_sec": 7.550347566604614
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.012854563197750546,
+        "wall_clock_sec": 7.198043584823608
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.012854563197750546,
+        "wall_clock_sec": 6.675516128540039
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.04239224898416569,
+        "wall_clock_sec": 10.50309443473816
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 7,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.044427281027608845,
+        "wall_clock_sec": 8.53758955001831
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04238106706883218,
+        "wall_clock_sec": 6.293877840042114
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.044427281027608845,
+        "wall_clock_sec": 5.359173536300659
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04238106706883218,
+        "wall_clock_sec": 4.50150203704834
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04238106706883218,
+        "wall_clock_sec": 6.979952573776245
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04238106706883218,
+        "wall_clock_sec": 6.079531669616699
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.02060943790309981,
+        "wall_clock_sec": 6.207823038101196
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 8,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.044263902583098265,
+        "wall_clock_sec": 8.863765716552734
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.03228312171735358,
+        "wall_clock_sec": 10.73865008354187
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.044263902583098265,
+        "wall_clock_sec": 10.498027324676514
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.03228312171735358,
+        "wall_clock_sec": 10.339709520339966
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.03228312171735358,
+        "wall_clock_sec": 9.695620059967041
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.03228312171735358,
+        "wall_clock_sec": 10.545475244522095
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.025075255072969867,
+        "wall_clock_sec": 9.964806079864502
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 9,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03374276090071453,
+        "wall_clock_sec": 7.188563585281372
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.043865113754838606,
+        "wall_clock_sec": 7.5865559577941895
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03374276090071453,
+        "wall_clock_sec": 6.524847030639648
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.043865113754838606,
+        "wall_clock_sec": 7.738474607467651
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.043865113754838606,
+        "wall_clock_sec": 7.8395302295684814
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.043865113754838606,
+        "wall_clock_sec": 8.338165998458862
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 4,
+        "best_rho": -0.03290517219241656,
+        "wall_clock_sec": 9.30662727355957
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 10,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04299153242544086,
+        "wall_clock_sec": 7.078909635543823
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.017161899587468422,
+        "wall_clock_sec": 16.03747844696045
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04299153242544086,
+        "wall_clock_sec": 6.502867221832275
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.017161899587468422,
+        "wall_clock_sec": 21.48710322380066
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.017161899587468422,
+        "wall_clock_sec": 20.846795558929443
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 25,
+        "best_rho": -0.017161899587468422,
+        "wall_clock_sec": 22.957817316055298
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.041634050229116835,
+        "wall_clock_sec": 11.739478826522827
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 11,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.005939801386882057,
+        "wall_clock_sec": 10.249005317687988
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.016297336902737092,
+        "wall_clock_sec": 13.829184293746948
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.005939801386882057,
+        "wall_clock_sec": 10.993266582489014
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.016297336902737092,
+        "wall_clock_sec": 13.772016286849976
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.016297336902737092,
+        "wall_clock_sec": 15.557719469070435
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.016297336902737092,
+        "wall_clock_sec": 16.639224529266357
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.014061310701757368,
+        "wall_clock_sec": 13.926157236099243
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 12,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04422378895935314,
+        "wall_clock_sec": 11.513232231140137
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.04357619554419504,
+        "wall_clock_sec": 16.29448390007019
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04422378895935314,
+        "wall_clock_sec": 12.87309718132019
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.04357619554419504,
+        "wall_clock_sec": 21.017573595046997
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.04357619554419504,
+        "wall_clock_sec": 13.897597074508667
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.04357619554419504,
+        "wall_clock_sec": 14.483599185943604
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.0007226026195811149,
+        "wall_clock_sec": 17.43071961402893
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 13,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.028736082002704885,
+        "wall_clock_sec": 18.462058305740356
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.005776941421685327,
+        "wall_clock_sec": 14.953493595123291
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.028736082002704885,
+        "wall_clock_sec": 9.734965562820435
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.005776941421685327,
+        "wall_clock_sec": 13.753780126571655
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.005776941421685327,
+        "wall_clock_sec": 13.295182466506958
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.005776941421685327,
+        "wall_clock_sec": 11.059691667556763
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.008237705040296988,
+        "wall_clock_sec": 9.679458379745483
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 14,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043768936455503685,
+        "wall_clock_sec": 8.064621210098267
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 10,
+        "best_rho": -0.043165013472513086,
+        "wall_clock_sec": 16.598565340042114
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043768936455503685,
+        "wall_clock_sec": 12.43954586982727
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 10,
+        "best_rho": -0.043165013472513086,
+        "wall_clock_sec": 13.889752388000488
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 10,
+        "best_rho": -0.043165013472513086,
+        "wall_clock_sec": 15.616533517837524
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 10,
+        "best_rho": -0.043165013472513086,
+        "wall_clock_sec": 24.921475172042847
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.024912873786940053,
+        "wall_clock_sec": 14.551862001419067
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 15,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03383467885666323,
+        "wall_clock_sec": 10.239877939224243
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.007962174506238323,
+        "wall_clock_sec": 14.19294023513794
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03383467885666323,
+        "wall_clock_sec": 6.780496597290039
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.007962174506238323,
+        "wall_clock_sec": 10.548999547958374
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.007962174506238323,
+        "wall_clock_sec": 9.890181303024292
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.007962174506238323,
+        "wall_clock_sec": 13.732353925704956
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04265689986365805,
+        "wall_clock_sec": 11.129105806350708
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 16,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.032966507106126454,
+        "wall_clock_sec": 12.273469924926758
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.02115962450969649,
+        "wall_clock_sec": 16.776607036590576
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.032966507106126454,
+        "wall_clock_sec": 12.23152780532837
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.02115962450969649,
+        "wall_clock_sec": 13.612165212631226
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.02115962450969649,
+        "wall_clock_sec": 14.04901933670044
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.02115962450969649,
+        "wall_clock_sec": 12.250982522964478
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.03547553003123903,
+        "wall_clock_sec": 13.601574659347534
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 17,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.044874022796725664,
+        "wall_clock_sec": 8.162185192108154
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.02970560884360763,
+        "wall_clock_sec": 9.154274702072144
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.044874022796725664,
+        "wall_clock_sec": 9.15303349494934
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.02970560884360763,
+        "wall_clock_sec": 7.7334303855896
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.02970560884360763,
+        "wall_clock_sec": 7.27913236618042
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.02970560884360763,
+        "wall_clock_sec": 8.020256757736206
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.017656207473906307,
+        "wall_clock_sec": 12.603161096572876
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 18,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.043644121875543986,
+        "wall_clock_sec": 9.456725358963013
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04280822223933849,
+        "wall_clock_sec": 10.728634119033813
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.043644121875543986,
+        "wall_clock_sec": 9.622076988220215
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04280822223933849,
+        "wall_clock_sec": 8.340813398361206
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04280822223933849,
+        "wall_clock_sec": 9.24133825302124
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04280822223933849,
+        "wall_clock_sec": 9.522135019302368
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.04294972065000032,
+        "wall_clock_sec": 12.782155990600586
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 19,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.0449708538280244,
+        "wall_clock_sec": 8.160948276519775
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.002271707330976824,
+        "wall_clock_sec": 7.233691453933716
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.0449708538280244,
+        "wall_clock_sec": 5.818037748336792
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.002271707330976824,
+        "wall_clock_sec": 8.712041854858398
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.002271707330976824,
+        "wall_clock_sec": 10.591134071350098
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.002271707330976824,
+        "wall_clock_sec": 7.854350566864014
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.04202715714032729,
+        "wall_clock_sec": 7.8376078605651855
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 20,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03384638615638945,
+        "wall_clock_sec": 8.115072250366211
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 20,
+        "best_rho": -0.04397888153176503,
+        "wall_clock_sec": 17.115572929382324
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03384638615638945,
+        "wall_clock_sec": 8.83556580543518
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 20,
+        "best_rho": -0.04397888153176503,
+        "wall_clock_sec": 15.681541204452515
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 20,
+        "best_rho": -0.04397888153176503,
+        "wall_clock_sec": 14.09350299835205
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 20,
+        "best_rho": -0.04397888153176503,
+        "wall_clock_sec": 9.52406930923462
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 13,
+        "best_rho": -0.011029257845665446,
+        "wall_clock_sec": 5.334086894989014
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 21,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.033336828185074864,
+        "wall_clock_sec": 2.7415173053741455
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.005771220300496528,
+        "wall_clock_sec": 2.7196402549743652
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.033336828185074864,
+        "wall_clock_sec": 3.4327898025512695
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.005771220300496528,
+        "wall_clock_sec": 2.4205191135406494
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.005771220300496528,
+        "wall_clock_sec": 3.161844253540039
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.005771220300496528,
+        "wall_clock_sec": 3.2579972743988037
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.04373796560730246,
+        "wall_clock_sec": 3.704787254333496
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 22,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.032556391027288405,
+        "wall_clock_sec": 2.709176778793335
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.016377346081769245,
+        "wall_clock_sec": 3.794060230255127
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.032556391027288405,
+        "wall_clock_sec": 2.3083887100219727
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.016377346081769245,
+        "wall_clock_sec": 3.492845058441162
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.016377346081769245,
+        "wall_clock_sec": 3.6353161334991455
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.016377346081769245,
+        "wall_clock_sec": 4.475831031799316
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.00028665074929009883,
+        "wall_clock_sec": 4.316486358642578
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 23,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.045325904390741016,
+        "wall_clock_sec": 3.094745635986328
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043011446241395336,
+        "wall_clock_sec": 3.101297616958618
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.045325904390741016,
+        "wall_clock_sec": 2.6784112453460693
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043011446241395336,
+        "wall_clock_sec": 2.261733055114746
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043011446241395336,
+        "wall_clock_sec": 2.9015493392944336
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043011446241395336,
+        "wall_clock_sec": 2.3103671073913574
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.03272532158573055,
+        "wall_clock_sec": 3.836278200149536
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 24,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.045540203998868344,
+        "wall_clock_sec": 2.741607904434204
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030562864942423707,
+        "wall_clock_sec": 3.3506267070770264
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.045540203998868344,
+        "wall_clock_sec": 1.8342058658599854
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030562864942423707,
+        "wall_clock_sec": 3.419295310974121
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030562864942423707,
+        "wall_clock_sec": 3.1121082305908203
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.030562864942423707,
+        "wall_clock_sec": 2.98337984085083
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.01906659690422445,
+        "wall_clock_sec": 3.8773980140686035
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 25,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.044952066937177584,
+        "wall_clock_sec": 2.2321691513061523
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.012234501585346759,
+        "wall_clock_sec": 4.154966831207275
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.044952066937177584,
+        "wall_clock_sec": 1.7370600700378418
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.012234501585346759,
+        "wall_clock_sec": 4.454355001449585
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.012234501585346759,
+        "wall_clock_sec": 4.324528217315674
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 11,
+        "best_rho": -0.012234501585346759,
+        "wall_clock_sec": 3.162240505218506
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 10,
+        "best_rho": -0.016309176053201705,
+        "wall_clock_sec": 3.035146474838257
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 26,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03196000794718308,
+        "wall_clock_sec": 2.0400898456573486
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.019611890193771766,
+        "wall_clock_sec": 2.945767402648926
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.03196000794718308,
+        "wall_clock_sec": 1.6298556327819824
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.019611890193771766,
+        "wall_clock_sec": 2.5633811950683594
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.019611890193771766,
+        "wall_clock_sec": 2.9918863773345947
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 5,
+        "best_rho": -0.019611890193771766,
+        "wall_clock_sec": 2.2127230167388916
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 16,
+        "best_rho": -0.016660797274737887,
+        "wall_clock_sec": 3.509636878967285
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 27,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.042987162536392134,
+        "wall_clock_sec": 1.5985136032104492
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.01382704922237023,
+        "wall_clock_sec": 1.8970305919647217
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.042987162536392134,
+        "wall_clock_sec": 1.4739336967468262
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.01382704922237023,
+        "wall_clock_sec": 1.7670793533325195
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.01382704922237023,
+        "wall_clock_sec": 1.7848427295684814
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 3,
+        "best_rho": -0.01382704922237023,
+        "wall_clock_sec": 1.7751846313476562
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 6,
+        "best_rho": -0.018614361393995294,
+        "wall_clock_sec": 2.0570428371429443
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 28,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.0453920886845511,
+        "wall_clock_sec": 1.7293915748596191
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.002768185151825643,
+        "wall_clock_sec": 1.5628609657287598
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.0453920886845511,
+        "wall_clock_sec": 1.4497573375701904
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.002768185151825643,
+        "wall_clock_sec": 1.8185601234436035
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.002768185151825643,
+        "wall_clock_sec": 1.6185038089752197
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 2,
+        "best_rho": -0.002768185151825643,
+        "wall_clock_sec": 1.6170403957366943
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.02259936053818607,
+        "wall_clock_sec": 1.5399582386016846
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 29,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04531532177433716,
+        "wall_clock_sec": 1.7306029796600342
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04334398546129266,
+        "wall_clock_sec": 2.457728862762451
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.04531532177433716,
+        "wall_clock_sec": 1.576350212097168
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04334398546129266,
+        "wall_clock_sec": 2.2713255882263184
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04334398546129266,
+        "wall_clock_sec": 2.444593667984009
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 7,
+        "best_rho": -0.04334398546129266,
+        "wall_clock_sec": 2.2840983867645264
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 4,
+        "best_rho": -0.04210845648825398,
+        "wall_clock_sec": 1.849289894104004
+      }
+    }
+  },
+  {
+    "requirement_id": "AT2",
+    "seed": 30,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043694949046680906,
+        "wall_clock_sec": 1.5287463665008545
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.04324793294253323,
+        "wall_clock_sec": 2.7891111373901367
+      },
+      "Deb_Warm": {
+        "falsified": true,
+        "simulations": 1,
+        "best_rho": -0.043694949046680906,
+        "wall_clock_sec": 1.659639835357666
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.04324793294253323,
+        "wall_clock_sec": 2.802464485168457
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.04324793294253323,
+        "wall_clock_sec": 2.9313066005706787
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 9,
+        "best_rho": -0.04324793294253323,
+        "wall_clock_sec": 3.0961310863494873
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 4,
+        "best_rho": -0.031809033875655285,
+        "wall_clock_sec": 2.1416027545928955
+      }
+    }
+  },
+  {
+    "requirement_id": "AT51",
+    "seed": 1,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 83.29954648017883
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 29,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 22.18461561203003
+      },
+      "Deb_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 90.19588494300842
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 29,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 25.08498501777649
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 78,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 46.03797459602356
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 108,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 53.44171404838562
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 132,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 94.39857292175293
+      }
+    }
+  },
+  {
+    "requirement_id": "AT51",
+    "seed": 2,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 67.52524662017822
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 3.7084665298461914
+      },
+      "Deb_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 71.63847398757935
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 3.5400171279907227
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 4.510782480239868
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 8,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 4.872561454772949
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 12,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 14.010769605636597
+      }
+    }
+  },
+  {
+    "requirement_id": "AT51",
+    "seed": 3,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 115.27173376083374
+      },
+      "SGX_Cold": {
+        "falsified": true,
+        "simulations": 46,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 42.52604365348816
+      },
+      "Deb_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 113.15087175369263
+      },
+      "Deb_Cold": {
+        "falsified": true,
+        "simulations": 46,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 38.78632831573486
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 29,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 26.830535411834717
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 46,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 39.68918514251709
+      },
+      "Random_Search": {
+        "falsified": true,
+        "simulations": 119,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 104.33338689804077
+      }
+    }
+  }
+]

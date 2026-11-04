@@ -1,0 +1,42 @@
+{
+  "requirement_id": "AT1",
+  "falsified": true,
+  "simulations_count": 6,
+  "regime_0_skips": 0,
+  "wall_clock_time_sec": 15.096250295639038,
+  "best_regime": 2,
+  "best_rho_pre": 1.0,
+  "best_rho_post": -0.02537111475438362,
+  "best_parameters": [
+    0.0,
+    100.0,
+    96.56341785764745,
+    100.0,
+    3.88859014696502,
+    0.0,
+    263.3094607838128,
+    0.0
+  ],
+  "history": [],
+  "gate2_verification": {
+    "is_confirmed": true,
+    "is_numerical_artifact": false,
+    "scr_baseline": 1.0000000000001776,
+    "scr_tightened": 7614.010115580259,
+    "rho_baseline": -0.02537111475438362,
+    "rho_tightened": -0.025344699417216215,
+    "robustness_discrepancy": 2.641533716740696e-05,
+    "tightened_solver": "ode15s",
+    "details": "CONFIRMED GENUINE COUNTEREXAMPLE: Violation verified under tightened ode15s (rho=-0.0253 < 0) with low numerical drift (0.0000 <= 0.05)."
+  },
+  "counterexample_summary": {
+    "max_speed": 124.56680065578905,
+    "max_rpm": 4770.924321020517,
+    "gears_reached": [
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ]
+  }
+}

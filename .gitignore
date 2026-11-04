@@ -1,0 +1,16 @@
+.env
+*.pyc
+__pycache__/
+*.log
+results/
+artifacts/
+.venv/
+slprj/
+*.slxc
+cache/
+*.aux
+*.bbl
+*.blg
+*.out
+*.bak
+preview_pages/

@@ -1,0 +1,64 @@
+[
+  {
+    "requirement_id": "AT51",
+    "seed": 45,
+    "arms": {
+      "SGX_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "sims_to_first_trigger": 1,
+        "sims_post_trigger": 149,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 84.680011510849
+      },
+      "SGX_Cold": {
+        "falsified": false,
+        "simulations": 150,
+        "sims_to_first_trigger": 1,
+        "sims_post_trigger": 149,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 76.32796335220337
+      },
+      "Deb_Warm": {
+        "falsified": false,
+        "simulations": 150,
+        "sims_to_first_trigger": 1,
+        "sims_post_trigger": 149,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 76.94249391555786
+      },
+      "Deb_Cold": {
+        "falsified": false,
+        "simulations": 150,
+        "sims_to_first_trigger": 1,
+        "sims_post_trigger": 149,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 84.70824980735779
+      },
+      "Dok_Cold": {
+        "falsified": true,
+        "simulations": 18,
+        "sims_to_first_trigger": 1,
+        "sims_post_trigger": 17,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 6.787864685058594
+      },
+      "Plain_Cold": {
+        "falsified": true,
+        "simulations": 56,
+        "sims_to_first_trigger": 1,
+        "sims_post_trigger": 55,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 25.712428092956543
+      },
+      "Random_Search": {
+        "falsified": false,
+        "simulations": 150,
+        "sims_to_first_trigger": 1,
+        "sims_post_trigger": 149,
+        "best_rho": -0.16666666666666666,
+        "wall_clock_sec": 103.26113677024841
+      }
+    }
+  }
+]
