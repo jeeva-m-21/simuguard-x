@@ -173,19 +173,6 @@ python3 scripts/07_generate_all_figures.py
 
 ---
 
-### Step 8: Compile the 14-Page IEEE TCAD Manuscript
-Compile the camera-ready double-column IEEE Transactions manuscript:
-```bash
-cd paper
-pdflatex -interaction=nonstopmode main.tex
-bibtex main
-pdflatex -interaction=nonstopmode main.tex
-pdflatex -interaction=nonstopmode main.tex
-```
-*Verification:* The compiled document `paper/main.pdf` is strictly **14 pages** with 0 compilation errors and 0 missing citation warnings.
-
----
-
 ## 4. Troubleshooting & FAQ
 
 **Q: Can I run this without a MATLAB license?**  

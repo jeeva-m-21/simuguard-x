@@ -1,6 +1,6 @@
 # SimuGuard-X: Simulation-Aware STL Falsification for Cyber-Physical Systems
 
-[![IEEE TCAD](https://img.shields.io/badge/IEEE%20TCAD-Under%20Review-blue.svg)](paper/main.pdf)
+[![Status](https://img.shields.io/badge/Status-Under%20Peer%20Review-blue.svg)](#)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-brightgreen.svg)](https://www.python.org/)
 [![MATLAB R2026a](https://img.shields.io/badge/MATLAB-R2026a%20%7C%20Simulink-orange.svg)](https://www.mathworks.com/products/matlab.html)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](LICENSE)
@@ -11,8 +11,7 @@
 * **Author:** Jeeva M  
 * **Affiliation:** Vellore Institute of Technology (VIT), Chennai, India  
 * **Contact:** `jeeva4772@gmail.com`  
-* **Target Publication:** *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)*  
-* **Manuscript:** [Read the 14-Page Paper (PDF)](paper/main.pdf) | [LaTeX Source](paper/main.tex)
+* **Status:** Under Review (*IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems*)  
 
 ---
 
@@ -21,8 +20,6 @@
 Directly prompting Large Language Models (LLMs) for continuous physical system verification triggers acute domain failures: semantic hallucination of block hierarchies, physically inadmissible slew rates, neglect of fundamental sample times ($T_s$), and generation of static scalar assertions that cannot monitor continuous temporal behaviors.
 
 SimuGuard-X resolves these failure modes through an automated 5-layer pipeline:
-
-![SimuGuard-X Architecture](paper/figures/fig_architecture.png)
 
 ```
 [ Natural Language Spec ] + [ Simulink Model (.mdl / .slx) ]
@@ -64,20 +61,6 @@ simuguard-x/
 ├── pyproject.toml                      <- Modern Python build system & package metadata
 ├── requirements.txt                    <- Pinned dependencies
 ├── .env.example                        <- Template for optional LLM API credentials
-│
-├── paper/                              <- IEEE TCAD camera-ready publication package
-│   ├── main.tex                        <- Strictly 14-page double-column IEEEtran manuscript
-│   ├── main.pdf                        <- Compiled publication PDF (strictly 14 pages, 0 errors)
-│   ├── references.bib                  <- 100% verified BibTeX bibliography
-│   └── figures/                        <- All 8 publication vector PDFs & 300-DPI PNGs
-│       ├── fig_architecture.pdf/.png   <- 5-layer pipeline architecture diagram
-│       ├── fig1_counterexample_witness.pdf/.png
-│       ├── fig2_solver_gate_scr.pdf/.png
-│       ├── fig3_ablation_stf.pdf/.png
-│       ├── fig4_wttf_breakeven.pdf/.png
-│       ├── fig5_rq1_specification_fidelity.pdf/.png
-│       ├── fig6_rq4_coverage_comparison.pdf/.png
-│       └── fig7_rq7_mutation_kill_scores.pdf/.png
 │
 ├── src/simuguard/                      <- Core SimuGuard-X Python Package
 │   ├── __init__.py
@@ -129,12 +112,8 @@ simuguard-x/
 │   ├── 07_generate_all_figures.py      <- Generates all 8 publication vector PDFs and PNGs
 │   └── update_paper_stats.py           <- LaTeX paper table synchronization tool
 │
-└── docs/                               <- In-Depth Technical Documentation
-    ├── REPRODUCIBILITY_DESK.md         <- Comprehensive reproduction desk guide
-    ├── EXPERIMENTAL_RESULTS_SUMMARY.md  <- Complete experimental analysis and metrics
-    ├── ORIGINAL_RESEARCH_PROPOSAL.md   <- Theoretical foundation & research specification
-    ├── PEER_REVIEW_FORMAL_METHODS.md   <- Adversarial formal methods review
-    └── PEER_REVIEW_RAW_FEEDBACK.txt    <- Complete peer-review correspondence
+└── docs/                               <- Documentation
+    └── REPRODUCIBILITY_DESK.md         <- Comprehensive reproduction desk guide
 ```
 
 ---
@@ -195,20 +174,10 @@ python3 scripts/06_compute_rigorous_statistics.py
 ```
 
 ### Generate Publication Figures
-Generates all 8 publication vector graphics (PDF) and 300-DPI figures (PNG):
+Generates all publication vector graphics (PDF) and figures (PNG):
 ```bash
 python3 scripts/07_generate_all_figures.py
 ```
-
-### Compile the IEEE TCAD Manuscript
-```bash
-cd paper
-pdflatex -interaction=nonstopmode main.tex
-bibtex main
-pdflatex -interaction=nonstopmode main.tex
-pdflatex -interaction=nonstopmode main.tex
-```
-The compiled paper [`paper/main.pdf`](paper/main.pdf) strictly spans **14 pages** with 0 warnings and 0 errors.
 
 ---
 

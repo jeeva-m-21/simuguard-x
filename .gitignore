@@ -2,6 +2,15 @@
 .env
 *.env
 
+# Unpublished Manuscript & Confidential Review Documents
+paper/
+*.pdf
+docs/EXPERIMENTAL_RESULTS_SUMMARY.md
+docs/ORIGINAL_RESEARCH_PROPOSAL.md
+docs/PEER_REVIEW_FORMAL_METHODS.md
+docs/PEER_REVIEW_RAW_FEEDBACK.txt
+sources/
+
 # Python build & caches
 *.pyc
 __pycache__/
@@ -32,4 +41,3 @@ slprj/
 **/*.bak
 *.synctex.gz
 **/*.synctex.gz
-paper/preview_pages/
