@@ -1,0 +1,122 @@
+{
+  "requirement_id": "AT51",
+  "track_a_stl": {
+    "requirement_id": "REQ-003",
+    "stl_formula": "always_[0,30] ( speed > 65 => ( eventually_[0,4] (gear >= 4) and always_(speed > 65 => gear >= 4) ) )",
+    "is_conditional": true,
+    "antecedent_formula": "speed > 65",
+    "consequent_formula": "eventually_[0,4] (gear >= 4) and always_(speed > 65 => gear >= 4)",
+    "predicates": [
+      {
+        "name": "mu_1",
+        "signal": "speed",
+        "expression": "speed - 65",
+        "operator": ">",
+        "threshold": 65.0,
+        "span_delta": 180.0
+      },
+      {
+        "name": "mu_2",
+        "signal": "gear",
+        "expression": "gear - 4",
+        "operator": ">=",
+        "threshold": 4.0,
+        "span_delta": 3.0
+      }
+    ],
+    "time_horizon": 30.0,
+    "confidence_explanation": "All predicates reference declared signals (speed, gear). Normalization spans use full signal ranges. The antecedent (speed > 65) triggers the consequent: gear must become >=4 within 4s and stay >=4 while speed remains >65, evaluated over the 30s simulation horizon."
+  },
+  "track_b_scenario": {
+    "scenario_name": "Aggressive_Throttle_Shift_Challenge",
+    "interpolation_type": "piecewise_linear",
+    "signals": [
+      {
+        "signal_name": "throttle",
+        "time_knots": [
+          0.0,
+          5.0,
+          10.0,
+          20.0,
+          30.0
+        ],
+        "default_values": [
+          0.0,
+          80.0,
+          90.0,
+          85.0,
+          50.0
+        ],
+        "bounds": [
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "max_slew_rate": 80.0
+      },
+      {
+        "signal_name": "brake",
+        "time_knots": [
+          0.0,
+          5.0,
+          10.0,
+          20.0,
+          30.0
+        ],
+        "default_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bounds": [
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ]
+        ],
+        "max_slew_rate": 200.0
+      }
+    ],
+    "falsification_intuition": "Accelerates rapidly into the 65 mph zone while sustaining high throttle demand, forcing the transmission to delay 4th gear upshift and causing consequent violation."
+  },
+  "llm_stats": {
+    "total_tokens": 3020,
+    "cost_usd": 0.0028,
+    "latency_sec": 4.2
+  }
+}

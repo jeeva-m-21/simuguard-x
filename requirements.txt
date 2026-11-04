@@ -1,0 +1,14 @@
+# SimuGuard-X Core Dependencies
+numpy>=1.24.0
+scipy>=1.10.0
+cmaes>=0.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
+packaging>=23.0
+
+# Optional / External verification tools
+# Note: matlabengine must be installed from your local MATLAB installation:
+# cd $MATLAB_ROOT/extern/engines/python && python setup.py install
+# rtamt / rtamt-native:
+# pip install rtamt

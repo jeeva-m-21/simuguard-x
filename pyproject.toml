@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simuguard-x"
+version = "1.0.0"
+description = "Simulation-Aware STL Falsification with Stiffness-Adaptive Penalties for Cyber-Physical Systems (IEEE TCAD)"
+readme = "README.md"
+authors = [
+    { name = "Jeeva M", email = "jeeva4772@gmail.com" }
+]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = [
+    "Cyber-Physical Systems",
+    "Simulink",
+    "Stateflow",
+    "Signal Temporal Logic",
+    "Falsification",
+    "CMA-ES",
+    "Stiff Solvers",
+    "Formal Methods",
+    "IEEE TCAD"
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "cmaes>=0.10.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "pandas>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jeeva-m-21/simuguard-x"
+Repository = "https://github.com/jeeva-m-21/simuguard-x"
+
+[tool.setuptools.packages.find]
+where = ["src"]

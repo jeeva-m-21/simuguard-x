@@ -1,0 +1,103 @@
+{
+  "requirement_id": "AT2",
+  "track_a_stl": {
+    "requirement_id": "REQ-001",
+    "stl_formula": "always_[0,30] (RPM <= 4500)",
+    "is_conditional": false,
+    "antecedent_formula": null,
+    "consequent_formula": null,
+    "predicates": [
+      {
+        "name": "mu_1",
+        "signal": "RPM",
+        "expression": "RPM - 4500",
+        "operator": "<=",
+        "threshold": 4500.0,
+        "span_delta": 6000.0
+      }
+    ],
+    "time_horizon": 30.0,
+    "confidence_explanation": "The property directly references the output signal RPM, which is defined in the model interface. The predicate mu_1 normalizes the bound using the full signal span (6000 RPM). The STL formula 'always_[0,30] (RPM <= 4500)' enforces that for the entire simulation horizon (0 to 30 s) the engine speed never exceeds 4500 RPM, with no antecedent condition, thus avoiding vacuous satisfaction."
+  },
+  "track_b_scenario": {
+    "type": "object",
+    "scenario_name": "HighThrottle_LowBrake_30s",
+    "interpolation_type": "piecewise_linear",
+    "signals": [
+      {
+        "signal_name": "throttle",
+        "time_knots": [
+          0.0,
+          5.0,
+          15.0,
+          30.0
+        ],
+        "default_values": [
+          0.0,
+          80.0,
+          100.0,
+          100.0
+        ],
+        "bounds": [
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "max_slew_rate": 50.0
+      },
+      {
+        "signal_name": "brake",
+        "time_knots": [
+          0.0,
+          5.0,
+          15.0,
+          30.0
+        ],
+        "default_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bounds": [
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ]
+        ],
+        "max_slew_rate": 200.0
+      }
+    ],
+    "falsification_intuition": "A rapid rise to high throttle (80\u2011100%) with virtually no braking creates a strong torque demand, pushing the engine speed toward its limit. The piecewise\u2011linear control with few knots keeps the search space low\u2011dimensional while respecting the 50%/s throttle slew limit and the 200\u202fN/s brake limit, encouraging CMA\u2011ES to discover a trajectory that exceeds 4500\u202fRPM within the 30\u202fs horizon."
+  },
+  "llm_stats": {
+    "total_tokens": 2761,
+    "cost_usd": 0.0024849,
+    "latency_sec": 6.024040699005127
+  }
+}

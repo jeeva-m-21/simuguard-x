@@ -1,0 +1,102 @@
+{
+  "requirement_id": "AT1",
+  "track_a_stl": {
+    "requirement_id": "REQ-001",
+    "stl_formula": "always_[0,30] (speed <= 120)",
+    "is_conditional": false,
+    "antecedent_formula": null,
+    "consequent_formula": null,
+    "predicates": [
+      {
+        "name": "mu_1",
+        "signal": "speed",
+        "expression": "speed - 120",
+        "operator": "<=",
+        "threshold": 120.0,
+        "span_delta": 180.0
+      }
+    ],
+    "time_horizon": 30.0,
+    "confidence_explanation": "The formula is grounded directly on the output signal 'speed', whose defined range is [0,180] km/h, giving a normalization span of 180. The temporal operator 'always' over the interval [0,30] seconds enforces that at every sampled instant within the 30\u2011second simulation horizon the speed must stay at or below 120 km/h, matching the natural\u2011language requirement without any antecedent condition."
+  },
+  "track_b_scenario": {
+    "scenario_name": "Autoshift_ThrottleBrake_Challenge",
+    "interpolation_type": "piecewise_linear",
+    "signals": [
+      {
+        "signal_name": "throttle",
+        "time_knots": [
+          0.0,
+          5.0,
+          15.0,
+          30.0
+        ],
+        "default_values": [
+          0.0,
+          80.0,
+          100.0,
+          100.0
+        ],
+        "bounds": [
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "max_slew_rate": 50.0
+      },
+      {
+        "signal_name": "brake",
+        "time_knots": [
+          0.0,
+          5.0,
+          15.0,
+          30.0
+        ],
+        "default_values": [
+          0.0,
+          0.0,
+          200.0,
+          0.0
+        ],
+        "bounds": [
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ],
+          [
+            0.0,
+            325.0
+          ]
+        ],
+        "max_slew_rate": 200.0
+      }
+    ],
+    "falsification_intuition": "The piecewise\u2011linear throttle profile rapidly climbs to high pedal positions (up to 100\u202f%) while respecting the 50\u202f%/s slew limit, creating strong acceleration early in the horizon. A brief, high\u2011force brake pulse around t=15\u202fs forces the controller to modulate gear shifts and engine torque, exposing any overshoot in speed. The combination of a sustained throttle surge and a sudden brake release challenges the vehicle\u2019s ability to keep speed \u2264120\u202fkm/h throughout the 30\u202fs interval."
+  },
+  "llm_stats": {
+    "total_tokens": 2935,
+    "cost_usd": 0.0026414999999999998,
+    "latency_sec": 9.178295373916626
+  }
+}

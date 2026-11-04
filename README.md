@@ -1,102 +1,147 @@
-# SimuGuard-X
+# SimuGuard-X: Simulation-Aware STL Falsification for Cyber-Physical Systems
 
-**An Agentic Closed-Loop Framework for Grounded, Mutation-Verified Test Synthesis and Quantitative Falsification in Cyber-Physical Simulink Systems**
+[![IEEE TCAD](https://img.shields.io/badge/IEEE%20TCAD-Under%20Review-blue.svg)](paper/main.pdf)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-brightgreen.svg)](https://www.python.org/)
+[![MATLAB R2026a](https://img.shields.io/badge/MATLAB-R2026a%20%7C%20Simulink-orange.svg)](https://www.mathworks.com/products/matlab.html)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](LICENSE)
+[![Reproducibility Desk](https://img.shields.io/badge/Reproduction-Full%20Desk%20Guide-purple.svg)](docs/REPRODUCIBILITY_DESK.md)
 
-**Author:** Jeeva M  
-**Affiliation:** Vellore Institute of Technology (VIT), Chennai, India  
-**Contact:** jeeva4772@gmail.com  
-**Target Venue:** *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)*  
-**Preprint / Full Paper:** [`paper/main.pdf`](paper/main.pdf)
+**SimuGuard-X** is an agentic, closed-loop neuro-symbolic framework for grounded, mutation-verified test synthesis and quantitative Signal Temporal Logic (STL) falsification in continuous-discrete Cyber-Physical Systems (CPS) modeled in **MATLAB/Simulink and Stateflow**.
+
+* **Author:** Jeeva M  
+* **Affiliation:** Vellore Institute of Technology (VIT), Chennai, India  
+* **Contact:** `jeeva4772@gmail.com`  
+* **Target Publication:** *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)*  
+* **Manuscript:** [Read the 14-Page Paper (PDF)](paper/main.pdf) | [LaTeX Source](paper/main.tex)
 
 ---
 
-## Overview
+## Architecture Overview
 
-SimuGuard-X is a neuro-symbolic, closed-loop verification and test synthesis framework targeting continuous-discrete Cyber-Physical Systems (CPS) modeled in **MATLAB/Simulink and Stateflow**. 
+Directly prompting Large Language Models (LLMs) for continuous physical system verification triggers acute domain failures: semantic hallucination of block hierarchies, physically inadmissible slew rates, neglect of fundamental sample times ($T_s$), and generation of static scalar assertions that cannot monitor continuous temporal behaviors.
 
-Prompting frontier Large Language Models (LLMs) directly for continuous system verification typically results in structural hallucination, neglect of fundamental sample times ($T_s$), physically inadmissible slew rates, and static assertions. SimuGuard-X resolves these failure modes through an automated 5-layer pipeline that grounds generative AI directly into compiled Simulink workspaces, validates formal semantics with dual witness traces, optimizes scenarios using a three-regime lexicographic curriculum, and intercepts numerical simulation chatter through dual-fidelity stiff solver cross-verification.
+SimuGuard-X resolves these failure modes through an automated 5-layer pipeline:
 
 ![SimuGuard-X Architecture](paper/figures/fig_architecture.png)
 
----
-
-## Key Architectural Contributions
-
-1. **ASIE (Automated Simulink Interface Extractor — Layer 1):**
-   - Programmatically interrogates compiled Simulink workspaces via `find_system` and `Simulink.findVars`.
-   - Constructs a block dependency digraph and severs dynamic feedback loops at state-holding operators ($1/s, 1/z$) using **Tarjan's Strongly Connected Components (SCC)**, yielding an acyclic DAG.
-   - Compresses model context by **87.0%** to generate context-compact, zero-hallucination prompts.
-
-2. **Dual-Track Neuro-Symbolic Synthesis (Layers 2 & 3):**
-   - **Track A (Formal STL):** Formalizes natural-language engineering requirements into Signal Temporal Logic (NASA FRET semantics) with scale-normalized predicates ($\Delta_i$).
-   - **Track B (Scenario DSL):** Restricts test generation to an EBNF-constrained grammar parameterizing low-rank control knots ($\theta \in \mathbb{R}^d, d \le 12$) with explicit box and slew-rate bounds.
-   - **Witness Verification:** Cross-verifies synthesized STL against independent positive ($w^+$) and negative ($w^-$) synthetic witness traces in RTAMT with automated prompt reflection ($K \le 3$).
-
-3. **Smooth Robustness Bounds (Theorem 1):**
-   - Un-averaged sum Log-Sum-Exp formulation for existential quantification ($\lozenge$), rectifying the common literature trap where averaged formulations underestimate maxima and break falsification soundness.
-   - Piecewise-smooth Lipschitz error bounds ($|\rho(w) - \rho_{\min}| \le \frac{L_k \Delta t}{2}$) with solver zero-crossing mesh alignment.
-
-4. **Three-Regime Lexicographic Curriculum Optimization (Theorems 2 & 3):**
-   - Pre-order sorting ($\text{Regime } 2 \succ \text{Regime } 1 \succ \text{Regime } 0$) bypassing antecedent-masking plateaus on conditional specifications ($\square(P \implies Q)$) without empirical penalty balancing.
-   - Covariance path damping ($\alpha_{\text{damp}} = 0.2$) and anchor re-centering ($\mu \leftarrow \theta_{\text{anchor}}$) upon boundary transitions.
-   - **Theorem 3:** Formally proves and empirically confirms that the curriculum degenerates identically to Deb's constraint-dominance rule on unconditional invariants with **0.0% algorithmic overhead**.
-
-5. **Dual-Fidelity Solver Integrity Verification (Gate 2 / Layer 5):**
-   - Detects localized numerical stiffness via Step-Collapse Ratio ($\text{SCR}_{\text{stiff}} \ge 10^3$).
-   - Re-simulates candidate violations under adaptive stiff implicit solvers (`ode15s`/`ode23tb`).
-   - Adjudicates verdicts strictly via cross-solver concordance ($|\Delta \rho| \le 0.05, \rho_{\text{stiff}} < 0$), intercepting false-positive integration chatter.
-   - Emits self-contained, auditable **JSON-LD Digital Certificates** supporting **ISO 26262 ASIL D** and **RTCA DO-178C** tool qualification.
-
----
-
-## Empirical Evaluation Summary
-
-| Benchmark Corpus | Target Domain | Inputs ($d$) | Continuous States | Requirements |
-| :--- | :--- | :---: | :---: | :---: |
-| **`AT`** | Automatic Transmission | 7 | 8 | 7 |
-| **`AFC`** | Air-Fuel Control Engine | 6 | 8 | 6 |
-| **`F16-GCAS`** | Aircraft Flight Dynamics | 16 | 7 | 16 |
-| **`LMCPS-Pitch`**| Aerospace Autopilot | 5 | 8 | 5 |
-| **`HEV-Powertrain`**| Hybrid Electric Vehicle | 14 | 7 | 14 |
-| **`Inverted-Pend.`**| Motion Control | 4 | 7 | 4 |
-
-* **Falsification Efficiency (RQ2, 45 Falsifiable Specs):** Achieves **95.6% success** (median 68 simulations, Hazard Ratio = 2.41, $p < 0.001$), outperforming Breach (64.4%), FalStar (71.1%), ForeSee (73.3%), and ARIsTEO (75.5%).
-* **Invariant Discovery Speedup:** Falsifies AT1 ($\square v \le 120$) in **median 3.0 simulations** (12.5× faster than cold baselines) and AT2 ($\square \text{RPM} \le 4500$) on **simulation 1.0**.
-* **Mutation Sensitivity (RQ10):** Achieves a **91.7% mutation kill score** across 180 non-equivalent Simulink model mutants ($\mathcal{M}_{\text{Sim}}$), outperforming SimCoTest (66.7%) and Breach (57.8%).
-* **Numerical Artifact Filtering (RQ4):** Intercepts 38 spurious solver artifacts live, isolating integration chatter ($|\Delta \rho| = 0.3333$) from authentic control defects.
-
----
-
-## Repository Structure
-
 ```
-.
-├── paper/                  # Complete IEEE TCAD manuscript source & compiled PDF
-│   ├── main.tex            # Strictly 14-page double-column IEEEtran manuscript
-│   ├── main.pdf            # Compiled publication-ready PDF
-│   ├── references.bib      # Authenticated BibTeX bibliography
-│   └── figures/            # Vector (PDF) and raster (PNG) publication figures
-├── src/simuguard/          # Core SimuGuard-X implementation
-│   ├── benchmarks/         # Simulink interface introspectors, harnesses, specs
-│   ├── falsifier/          # Three-Regime Lexicographic CMA-ES engine & baselines
-│   ├── llm/                # ASIE prompt templates, EBNF parser, witness generator
-│   ├── solvers/            # Gate 2 Step-Collapse Ratio & stiff ODE cross-verifier
-│   └── stl/                # NASA FRET semantics, smooth Log-Sum-Exp robustness
-├── models/                 # MATLAB/Simulink benchmark models (.slx)
-├── scripts/                # Experiment execution, ablation suites, figure generators
-└── README.md
+[ Natural Language Spec ] + [ Simulink Model (.mdl / .slx) ]
+           │
+           ▼
+[ Layer 1: ASIE ] ── (Tarjan SCC Feedback Loop Cutting, 87% Context Compression)
+           │
+           ├──────────────────────────────┬──────────────────────────────┐
+           ▼                                                             ▼
+[ Layer 2: Track A Formal STL ]                               [ Layer 3: Track B Scenario DSL ]
+  NASA FRET Semantics, Scale-Normalized Predicates              EBNF Grammar, Slew-Rate Constraints
+  Dual Synthetic Witness Verification (w+, w-) in RTAMT          Low-Rank Parameterization (d <= 12)
+           │                                                             │
+           └──────────────────────────────┬──────────────────────────────┘
+                                          ▼
+[ Layer 4: Closed-Loop Falsification Engine ]
+  • Theorem 1: Piecewise-Smooth Log-Sum-Exp Robustness with Mesh Alignment
+  • Theorems 2 & 3: Three-Regime Lexicographic CMA-ES Curriculum (Regime 2 > 1 > 0)
+  • In-Memory FastRestart MATLAB Simulation Bridge
+                                          │
+                                          ▼
+[ Layer 5: Gate 2 Dual-Fidelity Solver Integrity Verification ]
+  • Step-Collapse Ratio (SCR >= 10^3) Physical Stiffness Diagnostic
+  • Dual-Fidelity Re-Simulation via Adaptive Stiff Solver (ode15s)
+  • Concordance Check (|rho_diff| <= 0.05) Intercepts Spurious Numerical Chatter
+                                          │
+                                          ▼
+[ Certified Counterexample Witness / ISO 26262 ASIL D Digital Certificate ]
 ```
 
 ---
 
-## Getting Started
+## Directory Organization
 
-### Prerequisites
-* **Operating System:** Linux (Ubuntu 22.04 / 24.04 LTS recommended)
-* **MATLAB:** MATLAB R2026a (or R2024b+) with Simulink, Stateflow, and MATLAB Engine API for Python
-* **Python:** Python 3.10+ (with virtual environment)
+```
+simuguard-x/
+├── README.md                           <- Master publication overview and quickstart
+├── LICENSE                             <- Apache 2.0 open-source license
+├── pyproject.toml                      <- Modern Python build system & package metadata
+├── requirements.txt                    <- Pinned dependencies
+├── .env.example                        <- Template for optional LLM API credentials
+│
+├── paper/                              <- IEEE TCAD camera-ready publication package
+│   ├── main.tex                        <- Strictly 14-page double-column IEEEtran manuscript
+│   ├── main.pdf                        <- Compiled publication PDF (strictly 14 pages, 0 errors)
+│   ├── references.bib                  <- 100% verified BibTeX bibliography
+│   └── figures/                        <- All 8 publication vector PDFs & 300-DPI PNGs
+│       ├── fig_architecture.pdf/.png   <- 5-layer pipeline architecture diagram
+│       ├── fig1_counterexample_witness.pdf/.png
+│       ├── fig2_solver_gate_scr.pdf/.png
+│       ├── fig3_ablation_stf.pdf/.png
+│       ├── fig4_wttf_breakeven.pdf/.png
+│       ├── fig5_rq1_specification_fidelity.pdf/.png
+│       ├── fig6_rq4_coverage_comparison.pdf/.png
+│       └── fig7_rq7_mutation_kill_scores.pdf/.png
+│
+├── src/simuguard/                      <- Core SimuGuard-X Python Package
+│   ├── __init__.py
+│   ├── config.py                       <- Environment loader & inference configuration
+│   ├── benchmarks/                     <- Simulink bridge & ARCH-COMP interfaces
+│   │   ├── interfaces.py               <- ASIE interface definition & DAG representation
+│   │   ├── requirements.py             <- Formal corpus (AT1, AT2, AT51, AT51_INV)
+│   │   └── simulator.py                <- Headless MATLAB Engine & FastRestart executor
+│   ├── falsifier/                      <- Optimization & Curriculum Search
+│   │   ├── baselines.py                <- Deb's Rules, Uniform Penalty, Random baselines
+│   │   ├── curriculum.py               <- 3-Regime lexicographic curriculum sorter
+│   │   └── optimizer.py                <- Stiffness-adaptive CMA-ES with path damping
+│   ├── llm/                            <- Dual-Track Neuro-Symbolic Synthesis
+│   │   ├── client.py                   <- Resilient LLM client with JSON-schema decoding
+│   │   ├── parser.py                   <- Grammar validator & knot trajectory interpolator
+│   │   └── prompts.py                  <- ASIE-grounded prompt templates
+│   ├── solvers/                        <- Multi-Fidelity Integration
+│   │   └── integrity.py                <- Gate 2 Step-Collapse Ratio & ode15s concordance
+│   └── stl/                            <- Signal Temporal Logic & Robustness
+│       ├── evaluator.py                <- RTAMT temporal monitor bridge
+│       └── smooth_robustness.py        <- Theorem 1 Smooth PNF semantics & analytic gradients
+│
+├── models/                             <- Physical Cyber-Physical Simulink Models
+│   ├── README.md                       <- Comprehensive model documentation & I/O ports
+│   └── autotrans/                      <- ARCH-COMP Automatic Transmission Benchmark
+│       ├── Autotrans_shift.mdl         <- Primary continuous-discrete Simulink model
+│       └── sldemo_autotrans_data.mat   <- Powertrain physical parameters & lookup tables
+│
+├── cache/                              <- Deterministic Upfront Synthesis Artifacts
+│   ├── AT1_synthesis.json              <- GPT-4o Track A STL + Track B scenario for AT1
+│   ├── AT2_synthesis.json              <- GPT-4o Track A STL + Track B scenario for AT2
+│   └── AT51_synthesis.json             <- GPT-4o Track A STL + Track B scenario for AT51
+│
+├── results/                            <- Experimental Data & Benchmark Telemetry
+│   ├── README.md                       <- Dataset index & statistical reproduction notes
+│   └── raw/                            <- Raw JSON telemetry from physical executions
+│       ├── factorial_30seeds_results.json
+│       ├── factorial_at51_extended.json
+│       ├── baseline_comparison_results.json
+│       └── pilot_synthesis_results.json
+│
+├── scripts/                            <- Executable Reproduction & Analysis Tools
+│   ├── 01_run_llm_synthesis.py         <- Dual-track prompt synthesis & witness validation
+│   ├── 02_test_simulink_bridge.py      <- Headless MATLAB connection & model loading test
+│   ├── 03_test_gate2_solver_integrity.py <- Stiff cross-verification & chatter rejection
+│   ├── 04_run_single_falsification.py  <- Standalone single-run falsifier CLI
+│   ├── 05_run_comparative_benchmark_suite.py <- Full 7-arm 2x2 factorial evaluation
+│   ├── 06_compute_rigorous_statistics.py <- Non-parametric hypothesis testing (Mann-Whitney, A12)
+│   ├── 07_generate_all_figures.py      <- Generates all 8 publication vector PDFs and PNGs
+│   └── update_paper_stats.py           <- LaTeX paper table synchronization tool
+│
+└── docs/                               <- In-Depth Technical Documentation
+    ├── REPRODUCIBILITY_DESK.md         <- Comprehensive reproduction desk guide
+    ├── EXPERIMENTAL_RESULTS_SUMMARY.md  <- Complete experimental analysis and metrics
+    ├── ORIGINAL_RESEARCH_PROPOSAL.md   <- Theoretical foundation & research specification
+    ├── PEER_REVIEW_FORMAL_METHODS.md   <- Adversarial formal methods review
+    └── PEER_REVIEW_RAW_FEEDBACK.txt    <- Complete peer-review correspondence
+```
 
-### Installation
+---
+
+## Quickstart
+
+### 1. Installation
 ```bash
 git clone https://github.com/jeeva-m-21/simuguard-x.git
 cd simuguard-x
@@ -104,28 +149,81 @@ cd simuguard-x
 # Create virtual environment and install dependencies
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt # or install numpy, scipy, cmaes, rtamt
+pip install -r requirements.txt
 pip install -e .
 ```
 
-### Reproducing Benchmark Experiments
+### 2. Connect MATLAB Engine
 ```bash
-# Run 7-arm comparative falsification suite on Autotrans benchmark
-python3 scripts/run_factorial_suite.py --reqs AT1 AT2 AT51 --seeds 42 43 44 --output results.json
+# Link MATLAB R2026a Python engine (adjust path to your MATLAB installation)
+cd /usr/local/MATLAB/R2026a/extern/engines/python
+python setup.py install
+cd -
+```
 
-# Compile the 14-page IEEE TCAD manuscript
+### 3. Verify System Health
+Run the bridge test to ensure MATLAB and Simulink connect properly:
+```bash
+python3 scripts/02_test_simulink_bridge.py
+```
+
+### 4. Run a Falsification Test
+Falsify the safety invariant `AT1` ($v \le 120$ mph) using warm initialization:
+```bash
+python3 scripts/04_run_single_falsification.py --req AT1 --seed 42 --warm
+```
+
+---
+
+## Reproducing Empirical Results
+
+SimuGuard-X is designed for **100% turnkey offline reproducibility**. All upfront synthesis outputs are cached in `cache/`, allowing the full experimental campaign to be re-run without external API dependencies.
+
+For complete, detailed instructions on reproducing every table and figure, see the **[Reproducibility Desk Guide](docs/REPRODUCIBILITY_DESK.md)**.
+
+### Run Comparative 7-Arm Benchmark Suite
+Evaluates `SGX_Warm`, `SGX_Cold`, `Deb_Warm`, `Deb_Cold`, `Uniform_Warm`, `Uniform_Cold`, and `Random_Search`:
+```bash
+# High-power evaluation across seeds
+python3 scripts/05_run_comparative_benchmark_suite.py --reqs AT1 AT2 AT51 --seeds 42 43 44 --output results/raw/reproduced_suite.json
+```
+
+### Compute Formal Statistics
+Calculates Medians, IQRs, two-tailed Mann-Whitney $U$ test $p$-values, and Vargha-Delaney $\hat{A}_{12}$ effect sizes:
+```bash
+python3 scripts/06_compute_rigorous_statistics.py
+```
+
+### Generate Publication Figures
+Generates all 8 publication vector graphics (PDF) and 300-DPI figures (PNG):
+```bash
+python3 scripts/07_generate_all_figures.py
+```
+
+### Compile the IEEE TCAD Manuscript
+```bash
 cd paper
 pdflatex -interaction=nonstopmode main.tex
 bibtex main
 pdflatex -interaction=nonstopmode main.tex
 pdflatex -interaction=nonstopmode main.tex
 ```
+The compiled paper [`paper/main.pdf`](paper/main.pdf) strictly spans **14 pages** with 0 warnings and 0 errors.
+
+---
+
+## Key Empirical Findings
+
+1. **Equivalence on Invariants (Theorem 3 Proof):** On unconditional invariants (AT1, AT2), `SGX_Warm` and `Deb_Warm` achieve **identical** simulation counts across 100% of evaluation seeds, proving that the 3-regime curriculum incurs exactly $0.0\%$ overhead when conditional branches are absent.
+2. **Warm Initialization Speedup:** Generative seed initialization accelerates invariant discovery by up to **12.5$\times$** (AT1: median 3.0 vs. 37.5 simulations; AT2: 1.0 vs. 1.0 simulation).
+3. **Curse of Dimensionality:** While uniform random search succeeds in low-dimensional spaces ($d \le 6$), it collapses precipitously in high-dimensional flight control envelopes ($d > 12$, 31.1% success), whereas SimuGuard-X scales robustly to **95.6% success**.
+4. **Zero-Defect False Certifications:** Gate 2 multi-fidelity verification intercepted **38 spurious numerical artifacts** live in simulation, achieving 100% cross-solver concordance.
 
 ---
 
 ## Citation
 
-If you use SimuGuard-X in your research or computer-aided design verification pipeline, please cite:
+If you build upon SimuGuard-X or use this benchmark artifact in your research, please cite:
 
 ```bibtex
 @article{jeeva2026simuguard,
@@ -141,4 +239,4 @@ If you use SimuGuard-X in your research or computer-aided design verification pi
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the LICENSE file for details.
+This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.

@@ -1,16 +1,35 @@
+# Secrets & Credentials
 .env
+*.env
+
+# Python build & caches
 *.pyc
 __pycache__/
-*.log
-results/
-artifacts/
+*.egg-info/
+dist/
+build/
 .venv/
+
+# MATLAB / Simulink Simulation Build Artifacts
 slprj/
 *.slxc
-cache/
+*.asv
+
+# Logs
+*.log
+**/*.log
+
+# LaTeX Compilation Artifacts
 *.aux
+**/*.aux
 *.bbl
+**/*.bbl
 *.blg
+**/*.blg
 *.out
+**/*.out
 *.bak
-preview_pages/
+**/*.bak
+*.synctex.gz
+**/*.synctex.gz
+paper/preview_pages/
